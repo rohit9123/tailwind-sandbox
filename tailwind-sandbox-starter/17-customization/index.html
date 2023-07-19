@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Customization</title>
+    <script>
+      tailwind.config={
+        theme:{
+          screens:{
+            'sm':'600px',
+            'md':'808px',
+            'lg':'1024px',
+            'xl':'1280px',
+            '2xl':'1536px',
+          },
+        }
+      }
+      </script>
   </head>
  <body
     class="bg-black sm:bg-green-800 md:bg-blue-800 lg:bg-yellow-800 xl:bg-purple-800 2xl:bg-orange-800"

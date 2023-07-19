@@ -8,7 +8,24 @@
     <title>Breakpoints & Media Queries</title>
   </head>
   <!-- Tailwind is mobile-first -->
-  <body></body>
+  <!-- Tailwind's responsive design features are powered by media queries -->
+  <!-- Tailwind's breakpoints are based on min-width media queries -->
+  <body class="bg-black sm:bg-green-200 md:bg-blue-100">
+  <h1 class="text-white md:text-xl lg:text-2xl"></h1>
+
+
+  <script>
+    function showBroswerWidth(){
+      const width=window.innerWidth;
+      const h1=document.querySelector('h1');
+      h1.innerText=`width: ${width}`;
+    }
+    window.addEventListener('resize',showBroswerWidth);
+    window.addEventListener('load',showBroswerWidth);
+  </script>
+
+
+  </body>
 </html>
 
 <!-- Breakpoint Classes
